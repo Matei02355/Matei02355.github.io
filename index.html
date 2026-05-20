@@ -3,31 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Matei6942 | Local Business Websites</title>
-  <meta name="description" content="Simple, mobile-friendly websites for local service businesses that need calls, quotes, and trust fast.">
+  <title>Matei6942 | Local Service Websites</title>
+  <meta name="description" content="Fast, mobile-first websites for local service businesses that need more calls, quote requests, and trust online.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Matei6942 Local Service Websites",
+    "url": "https://matei02355.github.io/",
+    "email": "gavradacian11@gmail.com",
+    "areaServed": "United States",
+    "priceRange": "$500+",
+    "description": "Mobile-first one-page websites for local service businesses."
+  }
+  </script>
   <style>
     :root {
-      --ink: #16201d;
-      --muted: #5b6762;
-      --paper: #f7f3ea;
+      --ink: #101820;
+      --ink-soft: #25313b;
+      --muted: #5d6973;
+      --paper: #f4f6f2;
       --white: #ffffff;
-      --green: #1f6f50;
-      --teal: #1b8a8f;
-      --gold: #d9a441;
-      --red: #b85c38;
-      --line: rgba(22, 32, 29, 0.16);
-      --shadow: 0 18px 45px rgba(22, 32, 29, 0.15);
+      --blue: #185a9d;
+      --green: #26734d;
+      --orange: #e0772f;
+      --yellow: #f3c95d;
+      --line: rgba(16, 24, 32, 0.14);
+      --shadow: 0 20px 60px rgba(16, 24, 32, 0.18);
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       color: var(--ink);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       background: var(--paper);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       line-height: 1.5;
     }
 
@@ -38,49 +55,75 @@
 
     .hero {
       min-height: 92vh;
-      position: relative;
-      display: flex;
-      align-items: stretch;
       color: var(--white);
       background:
-        linear-gradient(90deg, rgba(13, 28, 24, 0.88), rgba(13, 28, 24, 0.58) 52%, rgba(13, 28, 24, 0.24)),
-        url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=82") center/cover;
+        linear-gradient(90deg, rgba(8, 15, 20, 0.92), rgba(8, 15, 20, 0.72) 48%, rgba(8, 15, 20, 0.28)),
+        url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1900&q=82") center/cover;
+      display: flex;
+      align-items: stretch;
     }
 
     .hero-inner {
-      width: min(1160px, calc(100% - 40px));
+      width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
-      padding: 28px 0 78px;
+      padding: 24px 0 36px;
       display: flex;
+      min-height: inherit;
       flex-direction: column;
       justify-content: space-between;
-      gap: 64px;
+      gap: 52px;
     }
 
     .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
+      gap: 18px;
+    }
+
+    .nav.no-brand {
+      justify-content: flex-end;
     }
 
     .brand {
-      font-weight: 800;
-      letter-spacing: 0;
+      display: grid;
+      gap: 3px;
+      padding-left: 13px;
+      border-left: 3px solid var(--orange);
+      line-height: 1;
+    }
+
+    .brand-name {
       font-size: 18px;
+      font-weight: 950;
+    }
+
+    .brand-line {
+      color: rgba(255, 255, 255, 0.66);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 22px;
-      color: rgba(255, 255, 255, 0.88);
+      gap: 20px;
       font-size: 14px;
-      font-weight: 650;
+      font-weight: 800;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .nav-cta {
+      padding: 10px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
     }
 
     .hero-copy {
-      max-width: 720px;
+      max-width: 760px;
     }
 
     .eyebrow {
@@ -88,54 +131,53 @@
       align-items: center;
       gap: 10px;
       color: rgba(255, 255, 255, 0.86);
-      font-weight: 800;
-      text-transform: uppercase;
       font-size: 13px;
-      letter-spacing: 0.08em;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
       margin-bottom: 18px;
     }
 
     .eyebrow::before {
       content: "";
-      width: 38px;
-      height: 2px;
-      background: var(--gold);
-      display: inline-block;
+      width: 40px;
+      height: 3px;
+      border-radius: 8px;
+      background: var(--orange);
     }
 
     h1 {
       margin: 0;
-      max-width: 760px;
-      font-size: clamp(46px, 8vw, 94px);
-      line-height: 0.95;
+      font-size: clamp(52px, 9vw, 108px);
+      line-height: 0.92;
       letter-spacing: 0;
+      max-width: 840px;
     }
 
-    .hero p {
-      max-width: 640px;
+    .hero-lede {
+      max-width: 660px;
       margin: 24px 0 0;
       color: rgba(255, 255, 255, 0.9);
-      font-size: clamp(18px, 2vw, 23px);
+      font-size: clamp(18px, 2.1vw, 24px);
     }
 
     .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 34px;
+      margin-top: 32px;
     }
 
     .button {
-      min-height: 48px;
+      min-height: 50px;
+      border-radius: 8px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
       padding: 13px 18px;
-      border-radius: 8px;
-      font-weight: 800;
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      transition: transform 0.18s ease, background 0.18s ease;
+      border: 1px solid transparent;
+      font-weight: 900;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
     }
 
     .button:hover {
@@ -143,260 +185,324 @@
     }
 
     .button.primary {
-      background: var(--gold);
-      color: #1e180d;
-      border-color: var(--gold);
+      color: #1d1606;
+      background: var(--yellow);
+      border-color: var(--yellow);
     }
 
     .button.secondary {
       color: var(--white);
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.28);
     }
 
-    .hero-strip {
+    .hero-proof {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 1px;
       overflow: hidden;
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.22);
       box-shadow: var(--shadow);
-      max-width: 920px;
     }
 
-    .strip-item {
-      background: rgba(255, 255, 255, 0.92);
+    .proof-item {
+      background: rgba(255, 255, 255, 0.94);
       color: var(--ink);
-      padding: 18px;
       min-height: 112px;
+      padding: 18px;
     }
 
-    .strip-item strong {
+    .proof-item strong {
       display: block;
-      font-size: 15px;
+      font-size: 21px;
+      line-height: 1.05;
       margin-bottom: 8px;
     }
 
-    .strip-item span {
+    .proof-item span {
       color: var(--muted);
+      font-weight: 650;
       font-size: 14px;
-      display: block;
     }
 
     section {
-      padding: 76px 0;
+      padding: 78px 0;
     }
 
     .wrap {
-      width: min(1160px, calc(100% - 40px));
+      width: min(1180px, calc(100% - 40px));
       margin: 0 auto;
     }
 
     .section-head {
       display: grid;
-      grid-template-columns: minmax(0, 0.85fr) minmax(260px, 0.45fr);
+      grid-template-columns: minmax(0, 0.85fr) minmax(280px, 0.45fr);
       align-items: end;
-      gap: 36px;
-      margin-bottom: 34px;
+      gap: 34px;
+      margin-bottom: 30px;
     }
 
     h2 {
-      font-size: clamp(34px, 5vw, 58px);
-      line-height: 1;
       margin: 0;
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1;
       letter-spacing: 0;
     }
 
-    .section-head p {
+    .section-head p,
+    .muted {
       margin: 0;
       color: var(--muted);
       font-size: 17px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .card {
+    .band-white {
       background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
-      min-height: 100%;
-    }
-
-    .card img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card-body {
-      padding: 20px;
-    }
-
-    h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
-      line-height: 1.15;
-    }
-
-    .card p,
-    .package p,
-    .quote p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .band {
-      background: #e8f0ea;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
     }
 
-    .package {
+    .offer-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items: stretch;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
     }
 
-    .package-main {
-      background: var(--ink);
-      color: var(--white);
-      border-radius: 8px;
-      padding: 34px;
-    }
-
-    .package-main p {
-      color: rgba(255, 255, 255, 0.78);
-      max-width: 620px;
-    }
-
-    .price {
-      display: flex;
-      align-items: baseline;
-      gap: 12px;
-      margin: 26px 0 8px;
-    }
-
-    .price strong {
-      font-size: clamp(44px, 7vw, 72px);
-      line-height: 1;
-    }
-
-    .price span {
-      color: rgba(255, 255, 255, 0.7);
-      font-weight: 700;
-    }
-
-    .list {
-      margin: 28px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 12px;
-    }
-
-    .list li {
-      display: flex;
-      gap: 10px;
-      color: rgba(255, 255, 255, 0.88);
-    }
-
-    .list li::before {
-      content: "";
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--gold);
-      margin-top: 8px;
-      flex: 0 0 auto;
-    }
-
-    .package-side {
-      display: grid;
-      gap: 18px;
-    }
-
-    .mini {
-      border-radius: 8px;
-      border: 1px solid var(--line);
-      background: var(--white);
-      padding: 24px;
-    }
-
-    .mini strong {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--green);
-    }
-
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      counter-reset: step;
-    }
-
-    .step {
+    .offer-card,
+    .step,
+    .faq-item {
       background: var(--white);
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 22px;
-      counter-increment: step;
+      min-height: 100%;
     }
 
-    .step::before {
-      content: "0" counter(step);
-      color: var(--red);
-      font-weight: 900;
+    .offer-card strong,
+    .step strong,
+    .faq-item strong {
       display: block;
-      margin-bottom: 22px;
+      font-size: 19px;
+      line-height: 1.15;
+      margin-bottom: 9px;
     }
 
-    .quote {
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 34px;
+    .offer-card p,
+    .step p,
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .split {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 30px;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 28px;
       align-items: center;
     }
 
-    .quote h2 {
-      font-size: clamp(32px, 4.4vw, 52px);
-      margin-bottom: 14px;
+    .photo-panel {
+      min-height: 520px;
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(16, 24, 32, 0.08), rgba(16, 24, 32, 0.18)),
+        url("https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1200&q=82") center/cover;
+      border: 1px solid var(--line);
     }
 
-    .quote .button {
-      background: var(--green);
+    .checklist {
+      display: grid;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .check {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .check b {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(38, 115, 77, 0.12);
+      color: var(--green);
+      font-size: 18px;
+    }
+
+    .check strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .check span {
+      color: var(--muted);
+    }
+
+    .pricing {
+      background: var(--ink);
       color: var(--white);
-      border-color: var(--green);
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(300px, 0.5fr);
+      overflow: hidden;
+    }
+
+    .pricing-main {
+      padding: 36px;
+    }
+
+    .pricing-main p {
+      color: rgba(255, 255, 255, 0.78);
+      margin: 14px 0 0;
+      max-width: 640px;
+    }
+
+    .price-line {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .price-line strong {
+      font-size: clamp(50px, 7vw, 82px);
+      line-height: 1;
+    }
+
+    .price-line span {
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 800;
+    }
+
+    .pricing-side {
+      padding: 30px;
+      background: #182631;
+      border-left: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .mini-list {
+      padding: 0;
+      margin: 18px 0 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .mini-list li {
+      color: rgba(255, 255, 255, 0.84);
+      display: grid;
+      grid-template-columns: 18px 1fr;
+      gap: 10px;
+    }
+
+    .mini-list li::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--orange);
+      margin-top: 8px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      counter-reset: steps;
+    }
+
+    .step {
+      counter-increment: steps;
+    }
+
+    .step::before {
+      content: "0" counter(steps);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      background: rgba(24, 90, 157, 0.1);
+      color: var(--blue);
+      font-weight: 950;
+      margin-bottom: 28px;
+    }
+
+    .industry-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: var(--white);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-weight: 800;
+      color: var(--ink-soft);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .final-cta {
+      background:
+        linear-gradient(90deg, rgba(16, 24, 32, 0.92), rgba(16, 24, 32, 0.66)),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=82") center/cover;
+      color: var(--white);
+      border-radius: 8px;
+      padding: 38px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(34px, 5vw, 62px);
+      margin-bottom: 12px;
+    }
+
+    .final-cta p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 640px;
+      font-size: 18px;
     }
 
     footer {
       padding: 28px 0;
       color: var(--muted);
-      border-top: 1px solid var(--line);
       font-size: 14px;
+      border-top: 1px solid var(--line);
     }
 
-    @media (max-width: 840px) {
-      .hero {
-        min-height: 94vh;
-        background:
-          linear-gradient(180deg, rgba(13, 28, 24, 0.92), rgba(13, 28, 24, 0.66) 68%, rgba(13, 28, 24, 0.3)),
-          url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=82") center/cover;
-      }
+    .mobile-stick {
+      display: none;
+    }
 
-      .nav {
-        align-items: flex-start;
+    @media (max-width: 900px) {
+      .hero {
+        min-height: 96vh;
+        background:
+          linear-gradient(180deg, rgba(8, 15, 20, 0.92), rgba(8, 15, 20, 0.74) 64%, rgba(8, 15, 20, 0.38)),
+          url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=82") center/cover;
       }
 
       .nav-links {
@@ -405,31 +511,51 @@
         justify-content: flex-end;
       }
 
-      .hero-strip,
-      .grid,
-      .package,
-      .process,
-      .quote,
-      .section-head {
+      .hero-proof,
+      .section-head,
+      .offer-grid,
+      .split,
+      .pricing,
+      .steps,
+      .faq-grid,
+      .final-cta {
         grid-template-columns: 1fr;
       }
 
-      .quote {
-        align-items: start;
+      .pricing-side {
+        border-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+      }
+
+      .photo-panel {
+        min-height: 360px;
       }
     }
 
-    @media (max-width: 560px) {
-      .hero-inner,
-      .wrap {
-        width: min(100% - 28px, 1160px);
+    @media (max-width: 580px) {
+      body {
+        padding-bottom: 72px;
       }
 
-      .nav-links a:not(:last-child) {
+      .hero-inner,
+      .wrap {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links a:not(.nav-cta) {
         display: none;
       }
 
-      .actions {
+      h1 {
+        font-size: clamp(48px, 16vw, 74px);
+      }
+
+      .actions,
+      .final-cta .actions {
         flex-direction: column;
       }
 
@@ -437,13 +563,44 @@
         width: 100%;
       }
 
-      .package-main,
-      .quote {
+      section {
+        padding: 58px 0;
+      }
+
+      .pricing-main,
+      .pricing-side,
+      .final-cta {
         padding: 24px;
       }
 
-      section {
-        padding: 58px 0;
+      .mobile-stick {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: var(--white);
+        border-top: 1px solid var(--line);
+        box-shadow: 0 -12px 30px rgba(16, 24, 32, 0.12);
+      }
+
+      .mobile-stick a {
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+      }
+
+      .mobile-stick a:first-child {
+        background: var(--green);
+        color: var(--white);
+      }
+
+      .mobile-stick a:last-child {
+        color: var(--ink);
       }
     }
   </style>
@@ -451,155 +608,234 @@
 <body>
   <header class="hero">
     <div class="hero-inner">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#">Matei6942</a>
+      <nav class="nav no-brand" aria-label="Main navigation">
         <div class="nav-links">
-          <a href="#work">Work</a>
-          <a href="#package">Package</a>
+          <a href="#offer">Offer</a>
           <a href="#process">Process</a>
-          <a href="mailto:gavradacian11@gmail.com">Email</a>
+          <a href="#pricing">Pricing</a>
+          <a class="nav-cta" href="mailto:gavradacian11@gmail.com?subject=Free%20homepage%20concept">Email</a>
         </div>
       </nav>
 
       <div class="hero-copy">
-        <div class="eyebrow">Local Business Websites</div>
-        <h1>Look real online before customers call someone else.</h1>
-        <p>I build sharp, mobile-friendly one-page websites for local service businesses that need calls, quotes, directions, and trust without a complicated tech setup.</p>
+        <div class="eyebrow">Fast websites for local services</div>
+        <h1>Local Service Websites</h1>
+        <p class="hero-lede">I build clean one-page sites for roofers, cleaners, movers, HVAC techs, plumbers, painters, landscapers, and other local service businesses that need calls and quote requests.</p>
         <div class="actions">
-          <a class="button primary" href="mailto:gavradacian11@gmail.com?subject=Website%20project%20for%20my%20business">Get a quick concept</a>
-          <a class="button secondary" href="#package">See what is included</a>
+          <a class="button primary" href="mailto:gavradacian11@gmail.com?subject=Free%20homepage%20concept&body=Business%20name:%0ACity/state:%0AServices:%0APhone:%0ACurrent%20website/social%20link:%0AWhat%20you%20want%20customers%20to%20do:">Request a free homepage concept</a>
+          <a class="button secondary" href="#pricing">See the $500 starter package</a>
         </div>
       </div>
 
-      <div class="hero-strip" aria-label="Website highlights">
-        <div class="strip-item">
-          <strong>Built for phone calls</strong>
-          <span>Tap-to-call buttons, service area, hours, map, and quote paths.</span>
+      <div class="hero-proof" aria-label="Offer summary">
+        <div class="proof-item">
+          <strong>$500+</strong>
+          <span>Starter one-page website package.</span>
         </div>
-        <div class="strip-item">
-          <strong>Fast and clean</strong>
-          <span>Simple static pages without plugin mess or slow templates.</span>
+        <div class="proof-item">
+          <strong>48h</strong>
+          <span>Homepage concept after business details.</span>
         </div>
-        <div class="strip-item">
-          <strong>Clear ownership</strong>
-          <span>You get the files, launch checklist, and simple update options.</span>
+        <div class="proof-item">
+          <strong>Mobile</strong>
+          <span>Tap-to-call, email, map, and quote actions.</span>
+        </div>
+        <div class="proof-item">
+          <strong>Owned</strong>
+          <span>Clean files, no platform hostage situation.</span>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section id="work">
+    <section id="offer" class="band-white">
       <div class="wrap">
         <div class="section-head">
-          <h2>Made for businesses people search for in a hurry.</h2>
-          <p>Roofers, cleaners, movers, pest control, HVAC, auto repair, grooming, landscaping, and other local services do not need fluff. They need clarity.</p>
+          <h2>Built like a sales tool, not a digital flyer.</h2>
+          <p>People looking for a local service usually want proof, price direction, and a fast way to contact someone. The page is shaped around that moment.</p>
         </div>
 
-        <div class="grid">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Contractor reviewing plans on a job site">
-            <div class="card-body">
-              <h3>Contractors and trades</h3>
-              <p>Show services, licenses, service areas, photos, reviews, and estimate requests in a format customers can scan quickly.</p>
-            </div>
+        <div class="offer-grid">
+          <article class="offer-card">
+            <strong>First-screen clarity</strong>
+            <p>Service, city, phone, quote button, reviews, and trust details are placed where visitors see them immediately.</p>
           </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=900&q=80" alt="Cleaning supplies arranged for a service job">
-            <div class="card-body">
-              <h3>Cleaning and home care</h3>
-              <p>Make recurring services, move-out cleans, deep cleans, and quote requests obvious without sending people hunting through social posts.</p>
-            </div>
+          <article class="offer-card">
+            <strong>Local trust signals</strong>
+            <p>Reviews, service area, photos, guarantees, years in business, and licensing info become visible proof.</p>
           </article>
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80" alt="Detailed car in a clean garage">
-            <div class="card-body">
-              <h3>Auto and mobile services</h3>
-              <p>Turn a listing into a proper home base with service menus, proof, coverage areas, and call buttons that work from a phone.</p>
-            </div>
+          <article class="offer-card">
+            <strong>Fast static build</strong>
+            <p>No bloated plugin stack. Just clean HTML/CSS that loads fast and is easy to hand off.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="band" id="package">
-      <div class="wrap package">
-        <div class="package-main">
+    <section>
+      <div class="wrap split">
+        <div class="photo-panel" aria-label="Contractor at work"></div>
+        <div>
+          <h2>What goes into the page.</h2>
+          <p class="muted">The exact sections change by business, but the structure stays focused on getting a real customer to take the next step.</p>
+          <div class="checklist">
+            <div class="check">
+              <b>1</b>
+              <div>
+                <strong>Service menu</strong>
+                <span>Clear categories for what the business actually does, written in plain customer language.</span>
+              </div>
+            </div>
+            <div class="check">
+              <b>2</b>
+              <div>
+                <strong>Proof section</strong>
+                <span>Reviews, photos, badges, guarantees, and experience details that reduce hesitation.</span>
+              </div>
+            </div>
+            <div class="check">
+              <b>3</b>
+              <div>
+                <strong>Contact path</strong>
+                <span>Tap-to-call links, email links, service area, hours, map/directions, and quote request prompts.</span>
+              </div>
+            </div>
+            <div class="check">
+              <b>4</b>
+              <div>
+                <strong>Search basics</strong>
+                <span>Page title, meta description, headings, local wording, image alt text, and LocalBusiness schema.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="band-white">
+      <div class="wrap pricing">
+        <div class="pricing-main">
           <h2>Starter website package</h2>
-          <p>A focused one-page site that makes the business look established and gives customers a clear next step.</p>
-          <div class="price">
+          <p>A focused site for businesses that need an online home base now: clean design, clear copy, mobile contact actions, and a launch plan.</p>
+          <div class="price-line">
             <strong>$500</strong>
             <span>starting price</span>
           </div>
-          <p>Final price depends on content, photos, domain setup, and extra pages.</p>
-          <ul class="list">
-            <li>Homepage with services, service area, hours, contact options, and trust sections.</li>
-            <li>Mobile layout, tap-to-call links, email link, map/directions, and quote callout.</li>
-            <li>Basic local SEO structure: title, description, headings, and LocalBusiness schema.</li>
-            <li>Launch help for domain, hosting, HTTPS, and a handoff checklist.</li>
+          <p>Best for a one-page website. Extra pages, advanced forms, logo work, copywriting from scratch, and ongoing hosting can change the price.</p>
+          <div class="actions">
+            <a class="button primary" href="mailto:gavradacian11@gmail.com?subject=Website%20starter%20package">Start with a concept</a>
+          </div>
+        </div>
+        <aside class="pricing-side">
+          <h3>Included</h3>
+          <ul class="mini-list">
+            <li>Responsive homepage</li>
+            <li>Services and service area</li>
+            <li>Click-to-call and email actions</li>
+            <li>Reviews/trust section</li>
+            <li>Basic local SEO structure</li>
+            <li>Launch checklist and handoff notes</li>
           </ul>
-        </div>
-
-        <div class="package-side">
-          <div class="mini">
-            <strong>Best first step</strong>
-            <p>Send the business name, city, services, photos, hours, and the phone number customers should call.</p>
-          </div>
-          <div class="mini">
-            <strong>Quick concept first</strong>
-            <p>I can sketch the homepage direction before you commit so the project feels concrete.</p>
-          </div>
-          <div class="mini">
-            <strong>No heavy monthly stack</strong>
-            <p>Clean HTML/CSS keeps the site fast, portable, and easier to own.</p>
-          </div>
-        </div>
+        </aside>
       </div>
     </section>
 
     <section id="process">
       <div class="wrap">
         <div class="section-head">
-          <h2>A simple build path.</h2>
-          <p>The point is to get a credible business presence online without turning it into a giant project.</p>
+          <h2>Simple process. No mystery box.</h2>
+          <p>Each project gets its own folder, notes, assets, and launch checklist so nothing gets tangled.</p>
         </div>
+        <div class="steps">
+          <div class="step">
+            <strong>Collect details</strong>
+            <p>Business name, city, services, photos, phone, email, reviews, and what kind of leads matter.</p>
+          </div>
+          <div class="step">
+            <strong>Build concept</strong>
+            <p>A first homepage direction is created so the business can see the offer before the full build.</p>
+          </div>
+          <div class="step">
+            <strong>Polish and launch</strong>
+            <p>Mobile layout, contact actions, images, local SEO basics, domain, hosting, and HTTPS are checked.</p>
+          </div>
+          <div class="step">
+            <strong>Hand off</strong>
+            <p>The client gets files, notes, update instructions, and options for future changes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="process">
-          <div class="step">
-            <h3>Collect basics</h3>
-            <p>Services, city, service area, hours, phone, email, reviews, and any photos.</p>
-          </div>
-          <div class="step">
-            <h3>Shape the page</h3>
-            <p>Copy and layout focused on what a customer needs before they call.</p>
-          </div>
-          <div class="step">
-            <h3>Build and polish</h3>
-            <p>Responsive page, contact actions, map links, speed checks, and search basics.</p>
-          </div>
-          <div class="step">
-            <h3>Launch</h3>
-            <p>Domain, hosting, HTTPS, and a clear handoff so the site is yours.</p>
-          </div>
+    <section class="band-white">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Good fits.</h2>
+          <p>The strongest matches are businesses where one phone call or quote can be worth real money.</p>
+        </div>
+        <div class="industry-row" aria-label="Industries">
+          <span class="pill">Roofing</span>
+          <span class="pill">HVAC</span>
+          <span class="pill">Plumbing</span>
+          <span class="pill">Cleaning</span>
+          <span class="pill">Moving</span>
+          <span class="pill">Landscaping</span>
+          <span class="pill">Painting</span>
+          <span class="pill">Pest control</span>
+          <span class="pill">Auto repair</span>
+          <span class="pill">Dog grooming</span>
         </div>
       </div>
     </section>
 
     <section>
       <div class="wrap">
-        <div class="quote">
-          <div>
-            <h2>Want to see your business as a real website?</h2>
-            <p>Send a few details and I will reply with the next step for a quick homepage concept.</p>
+        <div class="section-head">
+          <h2>Common questions.</h2>
+          <p>Clear answers help the offer feel safe before anyone replies.</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <strong>Do I need a logo?</strong>
+            <p>No. A clean text-based brand can work for the first version, and a logo can be added later.</p>
           </div>
-          <a class="button" href="mailto:gavradacian11@gmail.com?subject=Website%20concept%20request">Email Matei6942</a>
+          <div class="faq-item">
+            <strong>Can it use my photos?</strong>
+            <p>Yes. Real team, truck, shop, and job photos usually make the site feel more trustworthy than generic stock images.</p>
+          </div>
+          <div class="faq-item">
+            <strong>Do I own the site?</strong>
+            <p>Yes. The handoff includes the site files and launch notes. Hosting can be simple and portable.</p>
+          </div>
+          <div class="faq-item">
+            <strong>What do you need to start?</strong>
+            <p>Business name, city, services, phone, email, hours, service area, existing links, and any photos or reviews.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap final-cta">
+        <div>
+          <h2>Send the business details. I will shape the first concept.</h2>
+          <p>The first concept is meant to make the project real before the business commits to the full build.</p>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="mailto:gavradacian11@gmail.com?subject=Free%20homepage%20concept&body=Business%20name:%0ACity/state:%0AServices:%0APhone:%0ACurrent%20website/social%20link:%0ADeadline:%0ABudget:">Request concept</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">Matei6942 - Local business websites - Contact: gavradacian11@gmail.com</div>
+    <div class="wrap">Matei6942 - Local Service Websites - gavradacian11@gmail.com</div>
   </footer>
+
+  <div class="mobile-stick" aria-label="Mobile contact actions">
+    <a href="mailto:gavradacian11@gmail.com?subject=Free%20homepage%20concept">Email</a>
+    <a href="#pricing">Pricing</a>
+  </div>
 </body>
 </html>
